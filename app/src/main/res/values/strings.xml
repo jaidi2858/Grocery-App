@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Grocery App</string>
+    <string name="home">Home</string>
+    <string name="all_list">All List</string>
+    <string name="grocery_list">Grocery List</string>
+    <string name="create_grocery">Create Grocery</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="add_item">Add Item</string>
+    <string name="item_name">Item name</string>
+    <string name="item_price">Item Price</string>
+    <string name="grocery_item">Grocery Item</string>
+    <string name="item_name_required">Item name required</string>
+    <string name="item_price_required">Item price required</string>
+    <string name="save_grocery">Save Grocery</string>
+    <string name="mark_as_complete">Mark as complete</string>
+    <string name="update_item">Update Item</string>
+    <string name="no_grocery_available">No grocery available</string>
+    <string name="no_grocery_list_available">No grocery list available</string>
+</resources>

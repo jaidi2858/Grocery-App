@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navMainFragment">
+
+
+    <fragment
+        android:id="@+id/navMainFragment"
+        android:name="com.junaid.groceryappassignment.view.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_nav_main">
+        <action
+            android:id="@+id/action_navMainFragment_to_createGroceryFragment"
+            app:destination="@id/createGroceryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createGroceryFragment"
+        android:name="com.junaid.groceryappassignment.view.fragments.CreateGroceryFragment"
+        android:label="CreateGroceryFragment"
+        tools:layout="@layout/fragment_create_grocery">
+        <argument android:name="grocer_list_item" app:argType="com.junaid.groceryappassignment.model.data.GroceryListItem" app:nullable="true"/>
+    </fragment>
+</navigation>

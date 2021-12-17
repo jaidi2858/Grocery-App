@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/colorSecondary"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="end"
+                android:id="@+id/ivClose"
+                android:padding="7dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/colorWhiteBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/TvHStyle"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/grocery_item"
+                android:textColor="@color/colorWhiteBlack"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiGroceryName"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp">
+
+                <EditText
+                    android:id="@+id/etItemName"
+                    style="@style/TvSStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusedByDefault="false"
+                    android:hint="@string/item_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhiteBlack" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiEventPrice"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/etItemPrice"
+                    style="@style/TvSStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusedByDefault="false"
+                    android:hint="@string/item_price"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textColor="@color/colorWhiteBlack" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/btnAddItem"
+                    style="@style/TvMStyle"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_rect_secondary"
+                    android:backgroundTint="@color/colorWhiteBlack"
+                    android:focusedByDefault="true"
+                    android:padding="10dp"
+                    android:text="@string/add_item"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlackWhite"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GroceryAppAssignment" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorWhiteBlack</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+    </style>
+
+
+    <style name="TvHStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">26sp</item>
+        <item name="fontFamily">@font/s_pro_regular</item>
+        <item name="android:textColor">@color/colorWhiteBlack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TvH1Style" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/s_pro_regular</item>
+        <item name="android:textColor">@color/colorWhiteBlack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TvSStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhiteBlack</item>
+        <item name="fontFamily">@font/s_pro_regular</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TvMStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorWhiteBlack</item>
+        <item name="fontFamily">@font/s_pro_semi_bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="GeneralDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">95%</item>
+        <item name="android:windowMinWidthMinor">95%</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="hintTextColor">@color/colorWhiteBlack</item>
+        <item name="android:textColorHint">@color/colorWhiteBlack</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+        <item name="colorControlNormal">@color/colorWhiteBlack</item>
+        <item name="colorControlActivated">@color/colorWhiteBlack</item>
+    </style>
+</resources>
